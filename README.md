@@ -109,8 +109,9 @@ GitHub Issues
 Licensed under the MIT License
 
 
-💬 This project was created by Ainur as part of the Zama Testnet challenge. Its goal is to turn AI interaction into a confidential and healing experience — with cryptographic privacy as the foundation.
-
+💬 This project was created by Ainur as part of the Zama Testnet challenge.
+Its goal is to turn AI interaction into a confidential and healing experience —
+with cryptographic privacy as the foundation.
 
 ---
 📞 Contacts
