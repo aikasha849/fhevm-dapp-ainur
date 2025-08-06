@@ -1,114 +1,123 @@
-# Fhevm React Template
+# Fhevm-Dapp-Ainur
+# 🧠 FHEVM AI Therapy — Confidential dApp
 
-A modern React template for building decentralized applications (dApps) with Fully Homomorphic Encryption (FHE) capabilities using fhevmjs.
+A secure space for your thoughts.  
+This decentralized application enables **private therapeutic sessions** powered by AI, hosted on the blockchain and protected by **Fully Homomorphic Encryption (FHE)** using Zama’s [FHEVM protocol](https://zama.ai/).  
 
-## Features
+> 🌙 Like a personal journal, therapy session, or mental coach — encrypted and confidential.
 
-- **fhevmjs**: Fully Homomorphic Encryption for Ethereum Virtual Machine
-- **React**: Modern UI framework for building interactive interfaces
-- **Vite**: Next-generation frontend build tool
-- **Wagmi**: React hooks for Ethereum
-- **Tailwind**: Utility-first CSS framework for rapid UI development
-- **@reown/appkit**: Comprehensive toolkit for Web3 authentication including social logins and multi-wallet support
-- **@radix-ui**: Unstyled, accessible UI components for building high-quality design systems and web apps
+---
 
-## Prerequisites
+## 🛡️ Key Features
 
-- Node.js (v20 or higher)
-- npm, yarn, or pnpm package manager
-- MetaMask or another Ethereum wallet
+- `fhevmjs` — Process encrypted data directly on the Ethereum Virtual Machine
+- `@fhevm/sdk` — Client-side encryption/decryption in your browser
+- `React + Vite` — Fast and modern frontend framework
+- `Wagmi` — Ethereum wallet connection with ease
+- `Tailwind CSS` — Rapid UI styling
+- `@radix-ui` — Accessible design system components
+- `@reown/appkit` — Web3 login with social accounts & wallet support
 
-## Getting Started
+---
 
-1. Fork the following repository:
-   [https://github.com/zama-ai/fhevm-react-template](https://github.com/zama-ai/fhevm-react-template)
+## ⚙️ Technologies
 
-2. Clone your repository:
+| Category         | Stack                                       |
+|------------------|---------------------------------------------|
+| Frontend         | React, Vite, Tailwind, Radix UI             |
+| Blockchain       | Hardhat, Solidity, FHEVM, Sepolia Testnet   |
+| Wallet & Auth    | MetaMask, Wagmi, Reown                      |
+| Encryption Layer | Fully Homomorphic Encryption (FHE)          |
+
+---
+
+## 🧑‍💻 Getting Started
+
+1. Navigate to [zama-ai/fhevm-react-template](https://github.com/zama-ai/fhevm-react-template)
+2. Click on the **"Use this template"** button
+3. Choose **"Create a new repository"** and set the name, description, and visibility.
+
+### 🔁 Clone the repo
 
 ```bash
-git clone https://github.com/your-username/fhevm-react-template
-cd fhevm-react-template
-```
+git clone https://github.com/aikasha849/fhevm-dapp-ainur.git
+cd fhevm-dapp-ainur
 
-1. Install dependencies:
+📦 Install dependencies
 
-```bash
 npm install
-# or
-yarn install
-pnpm install
-```
 
-1. Configure environment variables:
+🔐 Setup environment variables
 
-```bash
+Copy example and edit .env file:
+
 cp .env.example .env
-```
 
-Update `.env` with your specific configuration:
+Update these variables:
 
-- `VITE_ACL_ADDRESS`: fhevm specific
-- `VITE_KMS_ADDRESS`: fhevm specific
-- `VITE_GATEWAY_URL`: fhevm specific
-- `VITE_PROJECT_ID`: Obtain your project ID by signing up at [reown.com](https://reown.com/). This enables social login and multi-wallet support.
-- `VITE_CONF_TOKEN_ADDRESS`: The address of your deployed confidential ERC20 token contract on Sepolia testnet. You'll get this after deploying the smart contract.
+### 🔐 Environment Variables
 
-## Development
+Create a `.env` file based on `.env.example` and fill in the following variables:
 
-Start the development server:
+| Variable                  | Description                                             | Example Value                              |
+|---------------------------|---------------------------------------------------------|---------------------------------------------|
+| `VITE_CONF_TOKEN_ADDRESS` | ✅ Smart contract address on Sepolia testnet            | `0x123abc456...`                            |
+| `VITE_PROJECT_ID`         | 🌱 Reown Project ID for social login (optional)         | `your-reown-project-id`                     |
+| `VITE_GATEWAY_URL`        | ✅ Zama FHE Gateway URL                                 | `https://gateway.fhe.zama.ai`               |
+| `VITE_ACL_ADDRESS`        | 🌱 Access Control contract (optional)                   | `0xabc987xyz...`                            |
+| `VITE_KMS_ADDRESS`        | 🌱 Key Management System address (optional)             | `0xkms123abc...`                            |
 
-```bash
+> ✅ Required | 🌱 Optional
+
+💻 Development mode
+
 npm run dev
-# or
-yarn dev
-pnpm dev
-```
 
-Visit [http://localhost:5173/](http://localhost:5173/) to view your application.
+Visit localhost:5173 to view your app.
 
-## Production Build
+🌐 Deployment
 
-Create a production-ready build:
+Build optimized production version:
 
-```bash
 npm run build
-# or
-yarn build
-pnpm build
-```
 
-## Development Options
+Then you can deploy with your preferred service — Vercel, Netlify, etc.
 
-### Using the Mocked Coprocessor
+🚧 Project Status
+🔨 MVP in progress — frontend integration with FHEVM is actively under development. Stay tuned for full demo deployment and live interactions.
 
-For faster development without testnet tokens, you can use a mocked fhevm:
+📈 Roadmap
 
-1. Check out the `ConfidentialERC20` example in the [`mockedFrontend` branch](https://github.com/zama-ai/fhevm-react-template/tree/mockedFrontend)
-2. Follow the branch-specific README for setup instructions
-3. Develop and test your dApp locally before deploying to Sepolia
+[x] Smart contract deployed on Sepolia
+[x] UI scaffolded from FHEVM template
+[ ] Encryption/decryption integrated via @fhevm/sdk
+[ ] Reown-based login added
+[ ] Public demo deployed
 
-### Using Sepolia Testnet
+## 🎓 Learn More
+- [FHEVM Documentation](https://docs.zama.ai/fhevm)
+- [React Documentation](https://react.dev)
+- [Vite Documentation](https://vitejs.dev)
+- [Wagmi Documentation](https://wagmi.sh)
 
-For testing with real network conditions, deploy your dApp to Sepolia testnet:
+🤝 Support & Community
 
-1. Ensure you have Sepolia testnet ETH
-2. Configure your `.env` with Sepolia network details
-3. Deploy and test your contracts
+Zama Discord
+GitHub Issues
 
-## Learn More
+⚖️ License
+Licensed under the MIT License
 
-- [fhevm Documentation](https://docs.zama.ai/fhevm)
-- [React Documentation](https://reactjs.org/)
-- [Vite Documentation](https://vitejs.dev/)
-- [Wagmi Documentation](https://wagmi.sh/)
 
-## Support
+💬 This project was created by Ainur as part of the Zama Testnet challenge. Its goal is to turn AI interaction into a confidential and healing experience — with cryptographic privacy as the foundation.
 
-For questions and support:
 
-- [fhevm Discord Community](https://discord.gg/zamaai)
-- [GitHub Issues](https://github.com/zama-ai/fhevm-react-template/issues)
+---
+📞 Contacts
+Author: Ainur 
+Telegram: @AinurSolar 
+X (Twitter): @InurSolar91279 
+Farcaster: farcaster.xyz/ainur-zk1 
+Email: jeneshka883@gmail.com
 
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
+Built with ❤️ by the Ainur$ZAMA
